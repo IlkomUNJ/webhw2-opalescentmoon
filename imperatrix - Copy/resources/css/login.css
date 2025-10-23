@@ -1,0 +1,56 @@
+#login {
+    margin-top: 2rem;
+    padding-bottom: 25vh;
+    position: fixed;
+}
+
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vh;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(85, 73, 120, 0.8);
+    border: 3px;
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Quantico", "Courier New", monospace;
+}
+
+button {
+    width: 100%;
+    background-color: rgba(141,152,238,1);
+    color: white;
+    padding: 12px;
+    font-family: "Quantico", "Courier New", monospace;
+    font-size: 16px;
+    text-decoration: solid;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8
+}

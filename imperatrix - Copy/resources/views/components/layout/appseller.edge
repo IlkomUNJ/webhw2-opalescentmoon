@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ title || "ass document" }} </title>
+    <link rel="icon" href="./assets/cerydra_icon.png" type="image/png">
+    
+    @vite(['resources/css/app.css',
+            'resources/js/app.js',
+            'resources/js/itemManager.js',
+            'resources/js/scripts.js'])
+
+    @if ($slots.meta)
+        {{{ await $slots.meta() }}}
+    @endif
+
+</head>
+
+<body>
+    @include('partials/seller-header')
+
+    {{{ await $slots.main()}}}
+
+    @include('partials/seller-footer')
+</body>
+
+</html>

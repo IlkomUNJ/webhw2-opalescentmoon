@@ -1,0 +1,62 @@
+@layout.appseller({ title : 'IMPERATRIX - Services' })
+    @slot('header')
+    @endslot
+
+    @slot('meta')
+    @endslot
+
+    @slot('main')
+    <main>
+
+        <section id="seller" class="bg-gradient">
+
+            <div class="content">
+                <h2 class="content-title">Seller Options</h2>
+                <p class="section-subtitle">Manage your store</p>
+            </div>
+
+
+            <div class="seller-wrapper">
+
+                <div class="btn-container">
+
+                    <button id="add-items" class="btn-small btn-color-1" onclick="showHiddenItems();">
+                        <p>Add Revenants</p>
+                    </button>
+                    
+                </div>
+
+                <div class="btn-container">
+
+                    <button id="all-product-list" class="btn-small btn-color-1" onclick="showAllProducts();">
+                        <p>List Revenants</p>
+                    </button>
+
+                </div>
+
+                <div class="btn-container">
+
+                    <button id="seek-wishlist" class="btn-small btn-color-1" onclick="showWishlist();">
+                        <p>Preview wishlist</p>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <h2 id="seller-type"></h2>
+
+            <div class="seller-wrapper">
+
+                <ul id="showAllProducts">
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+    @endslot
+@end

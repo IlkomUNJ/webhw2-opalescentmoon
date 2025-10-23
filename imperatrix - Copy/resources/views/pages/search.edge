@@ -1,0 +1,53 @@
+@layout.app({ title : 'IMPERATRIX'})
+  @slot('header')
+  @endslot
+
+  @slot('meta')
+  @endslot
+
+  @slot('main')
+
+    <main>
+
+        <section id="search-res" class="bg-gradient">
+
+            <div class="content">
+                <h2 class="content-title">Search Results</h2>
+                <p class="section-subtitle">Results for "{{ query }}"</p>
+            </div>
+
+            <div class="search-res-container">
+
+                <ul class="full-search-results">
+                @each(product in results)
+                    <li class="result-item">
+                        <div class="result-item-pic">
+                            <img src={{ product.img }} style="top: {{product.top}}; left: {{product.left}}; width: {{product.width}}; height: {{product.height}}; filter: {{product.filter}}">
+                        </div>
+                        <div class="result-item-text">
+                            {{ product.name }}
+                            <h3>Axis: {{ product.axis }}</h3>
+                        </div>
+                        <div class="buy-button-container">
+                            <button class="buy-button-result" onclick="resultToCart('{{ product.id }}', this)">
+                                <p>Recall</p>
+                            </button>
+                        </div>
+                    </li>
+                @endeach
+                </ul>
+            
+                <div class="popup">
+                    <div class="popup-text"><h3>Successfully added to waiting list!</h3></div>
+                </div>
+
+            </div>
+            
+
+        </section>
+        
+
+    </main>
+
+  @endslot
+@end

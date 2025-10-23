@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ title || "ass document" }} </title>
+    <link rel="icon" href="./assets/cerydra_icon.png" type="image/png">
+    
+    @vite(['resources/css/app.css',
+            'resources/js/app.js',
+            'resources/css/login.css',
+            'resources/js/login.js'])
+
+    @if ($slots.meta)
+        {{{ await $slots.meta() }}}
+    @endif
+
+</head>
+
+<body>
+
+    {{{ await $slots.main()}}}
+
+</body>
+
+</html>

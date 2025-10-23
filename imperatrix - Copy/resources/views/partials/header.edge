@@ -1,0 +1,58 @@
+<header>
+
+      <nav id="desktop-nav">
+
+            <div class="icon" onclick="window.location.href='/'"></div>
+            <div class="icon2" onclick="window.location.href='/'"></div>
+
+            <div id="search-container">
+                <form class="search-input" id="search-form">
+                    <input type="search" id="search-query" placeholder="Search Revenants...">
+                    <button type="submit">🔎</button>
+                </form>
+            </div>
+            <div id="results"></div>
+
+            <div>
+
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/products">Services</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/home#contact">Contact</a></li>
+                    <li><a href="/cart" onclick="loadCartItems()">🛒<span class="cart-badge"></span> </a></li>
+                    <li><a href="/wishlist" onclick="loadWishlistItems()">⭐<span class="wishlist-badge"></span> </a></li>
+                    <li><a href="/"><img src="../../../assets/icons8-profile-48.png"></a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <nav id="hamburger-nav">
+
+            <div class="logo"></div>
+
+            <div class="hamburger-menu">
+
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="/" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="/products" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="/about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="/cart" onclick="toggleMenu(); loadCartItems()">Checkout</a></li>
+                    <li><a href="/wishlist" onclick="toggleMenu(); loadWishlistItems()">Wishlist</a></li>
+                    <li><a href="/">Account</a></li>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>

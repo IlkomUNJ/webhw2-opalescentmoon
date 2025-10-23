@@ -1,0 +1,45 @@
+@layout.app({ title : 'IMPERATRIX'})
+  @slot('header')
+  @endslot
+
+  @slot('meta')
+  @endslot
+
+  @slot('main')
+
+    <main>
+
+        <section id="wishlist" class="bg-gradient">
+
+            <div class="content">
+                <h2 class="content-title">Wishlist</h2>
+            </div>
+
+            <div id="wishlist-content">
+
+                <div id="wishlist-wrapper">
+
+                    <ul id="wishlist-items">
+
+                        <li>placeholder</li>
+
+                    </ul>
+
+                </div>
+
+                <div id="wishlist-wrapper-extra">
+
+                </div>
+
+                <div class="popup">
+                    <div class="popup-text"><h3>Successfully added to waiting list!</h3></div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+  @endslot
+@end
